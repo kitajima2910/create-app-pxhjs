@@ -34,8 +34,8 @@ emitter
 
         const extensionPath = path.join(
             dest,
-            "vscode-extension",
-            "pxh-language-0.0.6.vsix"
+            "extensions",
+            "pxh-language-1.0.0.vsix"
         );
 
         if (fs.existsSync(extensionPath)) {

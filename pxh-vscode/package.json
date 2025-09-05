@@ -2,7 +2,7 @@
     "name": "pxh-language",
     "displayName": "PXH Language Support",
     "description": "PXH custom language with embedded HTML, CSS, JS",
-    "version": "0.0.6",
+    "version": "1.0.0",
     "author": "Kitajima2910",
     "publisher": "PXH 2910 - Kitajima2910",
     "icon": "icon.png",
@@ -46,8 +46,17 @@
             }
         ]
     },
+    "keywords": [
+        "pxh",
+        "html",
+        "css",
+        "js",
+        "embedded"
+    ],
     "repository": {
-        "type": "git",
-        "url": "https://github.com/kitajima2910/pxhjs.git"
+        "url": "https://github.com/kitajima2910/pxhjs"
+    },
+    "bugs": {
+        "url": "https://github.com/kitajima2910/pxhjs/issues"
     }
 }
