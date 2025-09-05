@@ -2,8 +2,11 @@
     "name": "pxh-language",
     "displayName": "PXH Language Support",
     "description": "PXH custom language with embedded HTML, CSS, JS",
-    "version": "0.0.1",
-    "publisher": "pxh",
+    "version": "0.0.3",
+    "author": "Kitajima2910",
+    "publisher": "PXH 2910 - Kitajima2910",
+    "icon": "icon.png",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.50.0"
     },
@@ -34,6 +37,12 @@
                     "meta.embedded.block.html": "html",
                     "meta.embedded.block.js": "javascript"
                 }
+            }
+        ],
+        "snippets": [
+            {
+                "language": "pxh",
+                "path": "./snippets/pxh.json"
             }
         ]
     },

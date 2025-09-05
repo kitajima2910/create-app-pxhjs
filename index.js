@@ -37,7 +37,7 @@ emitter
         const extensionPath = path.join(
             dest,
             "vscode-extension",
-            "pxh-language-0.0.1.vsix"
+            "pxh-language-0.0.2.vsix"
         );
 
         if (fs.existsSync(extensionPath)) {
@@ -53,6 +53,7 @@ emitter
                         console.log(
                             "[OK] VS Code extension has been installed successfully"
                         );
+                        console.log("Waiting...");
                     }
                 }
             );
@@ -60,6 +61,7 @@ emitter
             console.warn(
                 "[WARN] File extension does not exist, skipping extension installation"
             );
+            console.log("Waiting...");
         }
     })
     .catch((err) => {

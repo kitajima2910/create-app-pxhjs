@@ -1,0 +1,17 @@
+{
+    "HTML Block": {
+        "prefix": "pxh-html",
+        "body": ["pxh[html]: {", "    $1", "}"],
+        "description": "Insert HTML block"
+    },
+    "CSS Block": {
+        "prefix": "pxh-css",
+        "body": ["pxh[css]: {", "    $1", "}"],
+        "description": "Insert CSS block"
+    },
+    "JS Block": {
+        "prefix": "pxh-js",
+        "body": ["pxh[js]: {", "    $1", "}"],
+        "description": "Insert JS block"
+    }
+}
