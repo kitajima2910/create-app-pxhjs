@@ -1,0 +1,322 @@
+{
+    "!DOCTYPE": {
+        "prefix": "doctype",
+        "body": ["<!DOCTYPE html>"],
+        "description": "Khai báo doctype HTML5"
+    },
+    "HTML": {
+        "prefix": "html",
+        "body": ["<html>", "    $1", "</html>"],
+        "description": "Thẻ gốc HTML"
+    },
+    "Head": {
+        "prefix": "head",
+        "body": ["<head>", "    $1", "</head>"],
+        "description": "Phần metadata"
+    },
+    "Body": {
+        "prefix": "body",
+        "body": ["<body>", "    $1", "</body>"],
+        "description": "Nội dung hiển thị chính"
+    },
+    "Title": {
+        "prefix": "title",
+        "body": ["<title>$1</title>"],
+        "description": "Tiêu đề trang"
+    },
+    "Meta Charset": {
+        "prefix": "meta-charset",
+        "body": ["<meta charset=\"UTF-8\">"],
+        "description": "Meta charset UTF-8"
+    },
+    "Meta Viewport": {
+        "prefix": "meta-viewport",
+        "body": [
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+        ],
+        "description": "Meta viewport"
+    },
+    "Link CSS": {
+        "prefix": "linkcss",
+        "body": ["<link rel=\"stylesheet\" href=\"$1\">"],
+        "description": "Link CSS"
+    },
+    "Script JS": {
+        "prefix": "script",
+        "body": ["<script src=\"$1\"></script>"],
+        "description": "Script JavaScript"
+    },
+
+    "Header": {
+        "prefix": "header",
+        "body": ["<header>", "    $1", "</header>"],
+        "description": "Phần đầu trang"
+    },
+    "Nav": {
+        "prefix": "nav",
+        "body": ["<nav>", "    $1", "</nav>"],
+        "description": "Thanh điều hướng"
+    },
+    "Main": {
+        "prefix": "main",
+        "body": ["<main>", "    $1", "</main>"],
+        "description": "Nội dung chính"
+    },
+    "Section": {
+        "prefix": "section",
+        "body": ["<section>", "    $1", "</section>"],
+        "description": "Một phần nội dung"
+    },
+    "Article": {
+        "prefix": "article",
+        "body": ["<article>", "    $1", "</article>"],
+        "description": "Bài viết độc lập"
+    },
+    "Aside": {
+        "prefix": "aside",
+        "body": ["<aside>", "    $1", "</aside>"],
+        "description": "Sidebar / Nội dung phụ"
+    },
+    "Footer": {
+        "prefix": "footer",
+        "body": ["<footer>", "    $1", "</footer>"],
+        "description": "Phần chân trang"
+    },
+
+    "H1": {
+        "prefix": "h1",
+        "body": ["<h1>$1</h1>"],
+        "description": "Heading 1"
+    },
+    "H2": {
+        "prefix": "h2",
+        "body": ["<h2>$1</h2>"],
+        "description": "Heading 2"
+    },
+    "H3": {
+        "prefix": "h3",
+        "body": ["<h3>$1</h3>"],
+        "description": "Heading 3"
+    },
+    "H4": {
+        "prefix": "h4",
+        "body": ["<h4>$1</h4>"],
+        "description": "Heading 4"
+    },
+    "H5": {
+        "prefix": "h5",
+        "body": ["<h5>$1</h5>"],
+        "description": "Heading 5"
+    },
+    "H6": {
+        "prefix": "h6",
+        "body": ["<h6>$1</h6>"],
+        "description": "Heading 6"
+    },
+
+    "Paragraph": {
+        "prefix": "p",
+        "body": ["<p>$1</p>"],
+        "description": "Đoạn văn bản"
+    },
+    "Span": {
+        "prefix": "span",
+        "body": ["<span>$1</span>"],
+        "description": "Inline span"
+    },
+    "Bold": {
+        "prefix": "b",
+        "body": ["<b>$1</b>"],
+        "description": "Chữ đậm"
+    },
+    "Strong": {
+        "prefix": "strong",
+        "body": ["<strong>$1</strong>"],
+        "description": "Chữ đậm (ngữ nghĩa)"
+    },
+    "Italic": {
+        "prefix": "i",
+        "body": ["<i>$1</i>"],
+        "description": "Chữ nghiêng"
+    },
+    "Emphasis": {
+        "prefix": "em",
+        "body": ["<em>$1</em>"],
+        "description": "Nhấn mạnh"
+    },
+    "Underline": {
+        "prefix": "u",
+        "body": ["<u>$1</u>"],
+        "description": "Gạch dưới"
+    },
+    "Break": {
+        "prefix": "br",
+        "body": ["<br>"],
+        "description": "Xuống dòng"
+    },
+    "Horizontal Rule": {
+        "prefix": "hr",
+        "body": ["<hr>"],
+        "description": "Đường kẻ ngang"
+    },
+
+    "Unordered List": {
+        "prefix": "ul",
+        "body": ["<ul>", "    <li>$1</li>", "</ul>"],
+        "description": "Danh sách không thứ tự"
+    },
+    "Ordered List": {
+        "prefix": "ol",
+        "body": ["<ol>", "    <li>$1</li>", "</ol>"],
+        "description": "Danh sách có thứ tự"
+    },
+    "List Item": {
+        "prefix": "li",
+        "body": ["<li>$1</li>"],
+        "description": "Mục trong danh sách"
+    },
+
+    "Table": {
+        "prefix": "table",
+        "body": [
+            "<table>",
+            "    <tr>",
+            "        <th>$1</th>",
+            "        <th>$2</th>",
+            "    </tr>",
+            "    <tr>",
+            "        <td>$3</td>",
+            "        <td>$4</td>",
+            "    </tr>",
+            "</table>"
+        ],
+        "description": "Bảng dữ liệu"
+    },
+    "Table Row": {
+        "prefix": "tr",
+        "body": ["<tr>", "    $1", "</tr>"],
+        "description": "Hàng trong bảng"
+    },
+    "Table Data": {
+        "prefix": "td",
+        "body": ["<td>$1</td>"],
+        "description": "Ô dữ liệu"
+    },
+    "Table Header": {
+        "prefix": "th",
+        "body": ["<th>$1</th>"],
+        "description": "Ô tiêu đề"
+    },
+
+    "Form": {
+        "prefix": "form",
+        "body": ["<form action=\"$1\" method=\"post\">", "    $2", "</form>"],
+        "description": "Form nhập liệu"
+    },
+    "Input Text": {
+        "prefix": "input-text",
+        "body": ["<input type=\"text\" name=\"$1\" placeholder=\"$2\">"],
+        "description": "Input text"
+    },
+    "Input Password": {
+        "prefix": "input-pass",
+        "body": ["<input type=\"password\" name=\"$1\" placeholder=\"$2\">"],
+        "description": "Input password"
+    },
+    "Input Email": {
+        "prefix": "input-email",
+        "body": ["<input type=\"email\" name=\"$1\" placeholder=\"$2\">"],
+        "description": "Input email"
+    },
+    "Input Checkbox": {
+        "prefix": "input-check",
+        "body": ["<input type=\"checkbox\" name=\"$1\"> $2"],
+        "description": "Checkbox"
+    },
+    "Input Radio": {
+        "prefix": "input-radio",
+        "body": ["<input type=\"radio\" name=\"$1\" value=\"$2\"> $3"],
+        "description": "Radio button"
+    },
+    "Input Submit": {
+        "prefix": "input-submit",
+        "body": ["<input type=\"submit\" value=\"$1\">"],
+        "description": "Submit button"
+    },
+    "Button": {
+        "prefix": "button",
+        "body": ["<button type=\"button\">$1</button>"],
+        "description": "Button"
+    },
+    "Label": {
+        "prefix": "label",
+        "body": ["<label for=\"$1\">$2</label>"],
+        "description": "Label cho input"
+    },
+    "Textarea": {
+        "prefix": "textarea",
+        "body": ["<textarea name=\"$1\" rows=\"4\" cols=\"50\">$2</textarea>"],
+        "description": "Textarea"
+    },
+    "Select": {
+        "prefix": "select",
+        "body": [
+            "<select name=\"$1\">",
+            "    <option value=\"$2\">$3</option>",
+            "</select>"
+        ],
+        "description": "Dropdown select"
+    },
+
+    "Image": {
+        "prefix": "img",
+        "body": ["<img src=\"$1\" alt=\"$2\">"],
+        "description": "Ảnh"
+    },
+    "Audio": {
+        "prefix": "audio",
+        "body": [
+            "<audio controls>",
+            "    <source src=\"$1\" type=\"audio/mpeg\">",
+            "</audio>"
+        ],
+        "description": "Âm thanh"
+    },
+    "Video": {
+        "prefix": "video",
+        "body": [
+            "<video controls>",
+            "    <source src=\"$1\" type=\"video/mp4\">",
+            "</video>"
+        ],
+        "description": "Video"
+    },
+    "Iframe": {
+        "prefix": "iframe",
+        "body": ["<iframe src=\"$1\" width=\"600\" height=\"400\"></iframe>"],
+        "description": "Iframe nhúng"
+    },
+    "Marquee": {
+        "prefix": "marquee",
+        "body": ["<marquee>$1</marquee>"],
+        "description": "Chữ chạy (deprecated)"
+    },
+
+    "Anchor (link)": {
+        "prefix": "a",
+        "body": ["<a href=\"$1\">$2</a>"],
+        "description": "Thẻ liên kết (anchor) - href"
+    },
+    "Anchor (new tab)": {
+        "prefix": "a-blank",
+        "body": [
+            "<a href=\"$1\" target=\"_blank\" rel=\"noopener noreferrer\">$2</a>"
+        ],
+        "description": "Liên kết mở tab mới (target=\"_blank\") + rel bảo mật"
+    },
+    "Mailto link": {
+        "prefix": "mailto",
+        "body": ["<a href=\"mailto:$1\">$2</a>"],
+        "description": "Liên kết gửi email (mailto:)"
+    }
+}

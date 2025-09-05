@@ -1,6 +1,6 @@
 {
     "name": "create-app-pxhjs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "PXHJS project scaffolding tool",
     "bin": {
         "create-app-pxhjs": "index.js"

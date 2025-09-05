@@ -1,0 +1,320 @@
+{
+    "CSS Selector": {
+        "prefix": "sel",
+        "body": ["$1 {", "    $2", "}"],
+        "description": "Định nghĩa selector CSS"
+    },
+
+    "Property Template": {
+        "prefix": "prop",
+        "body": ["$1: $2;"],
+        "description": "Thuộc tính CSS cơ bản"
+    },
+
+    "Color": {
+        "prefix": "color",
+        "body": ["color: $1;"],
+        "description": "Màu chữ"
+    },
+    "Background": {
+        "prefix": "bg",
+        "body": ["background: $1;"],
+        "description": "Thuộc tính nền"
+    },
+    "Background Color": {
+        "prefix": "bgc",
+        "body": ["background-color: $1;"],
+        "description": "Màu nền"
+    },
+    "Background Image": {
+        "prefix": "bgi",
+        "body": ["background-image: url('$1');"],
+        "description": "Ảnh nền"
+    },
+
+    "Width": {
+        "prefix": "w",
+        "body": ["width: $1;"],
+        "description": "Chiều rộng"
+    },
+    "Height": {
+        "prefix": "h",
+        "body": ["height: $1;"],
+        "description": "Chiều cao"
+    },
+    "Max Width": {
+        "prefix": "maw",
+        "body": ["max-width: $1;"],
+        "description": "Chiều rộng tối đa"
+    },
+    "Max Height": {
+        "prefix": "mah",
+        "body": ["max-height: $1;"],
+        "description": "Chiều cao tối đa"
+    },
+
+    "Margin": {
+        "prefix": "m",
+        "body": ["margin: $1;"],
+        "description": "Khoảng cách ngoài"
+    },
+    "Margin Auto": {
+        "prefix": "ma",
+        "body": ["margin: 0 auto;"],
+        "description": "Căn giữa ngang"
+    },
+    "Padding": {
+        "prefix": "p",
+        "body": ["padding: $1;"],
+        "description": "Khoảng cách trong"
+    },
+
+    "Border": {
+        "prefix": "b",
+        "body": ["border: $1 solid $2;"],
+        "description": "Đường viền"
+    },
+    "Border Radius": {
+        "prefix": "br",
+        "body": ["border-radius: $1;"],
+        "description": "Bo góc"
+    },
+    "Box Shadow": {
+        "prefix": "bxsh",
+        "body": ["box-shadow: $1 $2 $3 $4;"],
+        "description": "Đổ bóng"
+    },
+
+    "Font Family": {
+        "prefix": "ff",
+        "body": ["font-family: $1;"],
+        "description": "Font chữ"
+    },
+    "Font Size": {
+        "prefix": "fs",
+        "body": ["font-size: $1;"],
+        "description": "Kích thước chữ"
+    },
+    "Font Weight": {
+        "prefix": "fw",
+        "body": ["font-weight: $1;"],
+        "description": "Độ đậm chữ"
+    },
+    "Text Align": {
+        "prefix": "ta",
+        "body": ["text-align: $1;"],
+        "description": "Căn lề chữ"
+    },
+    "Text Decoration": {
+        "prefix": "td",
+        "body": ["text-decoration: $1;"],
+        "description": "Trang trí chữ"
+    },
+    "Line Height": {
+        "prefix": "lh",
+        "body": ["line-height: $1;"],
+        "description": "Độ cao dòng"
+    },
+    "Letter Spacing": {
+        "prefix": "ls",
+        "body": ["letter-spacing: $1;"],
+        "description": "Khoảng cách chữ"
+    },
+
+    "Display": {
+        "prefix": "d",
+        "body": ["display: $1;"],
+        "description": "Kiểu hiển thị (block, inline, flex, grid)"
+    },
+    "Flexbox": {
+        "prefix": "flex",
+        "body": ["display: flex;", "justify-content: $1;", "align-items: $2;"],
+        "description": "Flexbox cơ bản"
+    },
+    "Grid": {
+        "prefix": "grid",
+        "body": [
+            "display: grid;",
+            "grid-template-columns: $1;",
+            "grid-template-rows: $2;"
+        ],
+        "description": "Grid cơ bản"
+    },
+
+    "Position": {
+        "prefix": "pos",
+        "body": ["position: $1;"],
+        "description": "Vị trí (relative, absolute, fixed, sticky)"
+    },
+    "Top": { "prefix": "t", "body": ["top: $1;"], "description": "Cách trên" },
+    "Right": {
+        "prefix": "r",
+        "body": ["right: $1;"],
+        "description": "Cách phải"
+    },
+    "Bottom": {
+        "prefix": "b",
+        "body": ["bottom: $1;"],
+        "description": "Cách dưới"
+    },
+    "Left": {
+        "prefix": "l",
+        "body": ["left: $1;"],
+        "description": "Cách trái"
+    },
+    "Z-Index": {
+        "prefix": "z",
+        "body": ["z-index: $1;"],
+        "description": "Thứ tự chồng lớp"
+    },
+
+    "Cursor": {
+        "prefix": "cur",
+        "body": ["cursor: $1;"],
+        "description": "Con trỏ chuột"
+    },
+    "Overflow": {
+        "prefix": "ov",
+        "body": ["overflow: $1;"],
+        "description": "Quy định tràn nội dung"
+    },
+    "Opacity": {
+        "prefix": "op",
+        "body": ["opacity: $1;"],
+        "description": "Độ trong suốt"
+    },
+    "Transition": {
+        "prefix": "trans",
+        "body": ["transition: $1 $2;"],
+        "description": "Hiệu ứng chuyển tiếp"
+    },
+    "Animation": {
+        "prefix": "anim",
+        "body": ["animation: $1 $2 $3;"],
+        "description": "Khai báo animation"
+    },
+
+    "--- Pseudo Classes ---": {
+        "prefix": "---",
+        "body": [""],
+        "description": "Nhóm Pseudo Classes"
+    },
+
+    "Hover": {
+        "prefix": "hover",
+        "body": ["$1:hover {", "    $2", "}"],
+        "description": "Trạng thái hover"
+    },
+    "Active": {
+        "prefix": "active",
+        "body": ["$1:active {", "    $2", "}"],
+        "description": "Trạng thái active"
+    },
+    "Focus": {
+        "prefix": "focus",
+        "body": ["$1:focus {", "    $2", "}"],
+        "description": "Trạng thái focus"
+    },
+    "Visited": {
+        "prefix": "visited",
+        "body": ["$1:visited {", "    $2", "}"],
+        "description": "Liên kết đã ghé thăm"
+    },
+    "First Child": {
+        "prefix": "fc",
+        "body": ["$1:first-child {", "    $2", "}"],
+        "description": "Phần tử con đầu tiên"
+    },
+    "Last Child": {
+        "prefix": "lc",
+        "body": ["$1:last-child {", "    $2", "}"],
+        "description": "Phần tử con cuối cùng"
+    },
+    "Nth Child": {
+        "prefix": "nth",
+        "body": ["$1:nth-child($2) {", "    $3", "}"],
+        "description": "Phần tử con thứ n"
+    },
+    "Nth Of Type": {
+        "prefix": "ntht",
+        "body": ["$1:nth-of-type($2) {", "    $3", "}"],
+        "description": "Phần tử loại thứ n"
+    },
+    "Not": {
+        "prefix": "not",
+        "body": ["$1:not($2) {", "    $3", "}"],
+        "description": "Loại trừ selector"
+    },
+    "Disabled": {
+        "prefix": "dis",
+        "body": ["$1:disabled {", "    $2", "}"],
+        "description": "Input bị vô hiệu"
+    },
+    "Checked": {
+        "prefix": "chk",
+        "body": ["$1:checked {", "    $2", "}"],
+        "description": "Input được chọn"
+    },
+    "Empty": {
+        "prefix": "emp",
+        "body": ["$1:empty {", "    $2", "}"],
+        "description": "Phần tử rỗng"
+    },
+    "First Of Type": {
+        "prefix": "fot",
+        "body": ["$1:first-of-type {", "    $2", "}"],
+        "description": "Phần tử loại đầu tiên"
+    },
+    "Last Of Type": {
+        "prefix": "lot",
+        "body": ["$1:last-of-type {", "    $2", "}"],
+        "description": "Phần tử loại cuối cùng"
+    },
+    "Only Child": {
+        "prefix": "oc",
+        "body": ["$1:only-child {", "    $2", "}"],
+        "description": "Phần tử con duy nhất"
+    },
+    "Only Of Type": {
+        "prefix": "oot",
+        "body": ["$1:only-of-type {", "    $2", "}"],
+        "description": "Phần tử loại duy nhất"
+    },
+
+    "--- Pseudo Elements ---": {
+        "prefix": "----",
+        "body": [""],
+        "description": "Nhóm Pseudo Elements"
+    },
+
+    "Before": {
+        "prefix": "bef",
+        "body": ["$1::before {", "    content: \"$2\";", "    $3", "}"],
+        "description": "Chèn trước nội dung"
+    },
+    "After": {
+        "prefix": "aft",
+        "body": ["$1::after {", "    content: \"$2\";", "    $3", "}"],
+        "description": "Chèn sau nội dung"
+    },
+    "First Letter": {
+        "prefix": "fl",
+        "body": ["$1::first-letter {", "    $2", "}"],
+        "description": "Chữ cái đầu tiên"
+    },
+    "First Line": {
+        "prefix": "fli",
+        "body": ["$1::first-line {", "    $2", "}"],
+        "description": "Dòng đầu tiên"
+    },
+    "Selection": {
+        "prefix": "selc",
+        "body": ["$1::selection {", "    $2", "}"],
+        "description": "Phần được chọn"
+    },
+    "Placeholder": {
+        "prefix": "ph",
+        "body": ["$1::placeholder {", "    $2", "}"],
+        "description": "Placeholder trong input"
+    }
+}

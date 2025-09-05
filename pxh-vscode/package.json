@@ -43,6 +43,18 @@
             {
                 "language": "pxh",
                 "path": "./snippets/pxh.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/pxh-html.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/pxh-css.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/pxh-js.json"
             }
         ]
     },
