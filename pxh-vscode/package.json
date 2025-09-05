@@ -2,7 +2,7 @@
     "name": "pxh-language",
     "displayName": "PXH Language Support",
     "description": "PXH custom language with embedded HTML, CSS, JS",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "Kitajima2910",
     "publisher": "PXH 2910 - Kitajima2910",
     "icon": "icon.png",

@@ -27,17 +27,15 @@ emitter
     .then(() => {
         console.log("\n[OK] Project PXHJS has been created at: ", dest);
 
-        // Hiển thị các bước tiếp theo
         console.log("\nNext steps:");
         console.log("  cd " + appName);
         console.log("  npm install");
         console.log("  npm start\n");
 
-        // Kiểm tra và cài đặt extension
         const extensionPath = path.join(
             dest,
             "vscode-extension",
-            "pxh-language-0.0.3.vsix"
+            "pxh-language-0.0.4.vsix"
         );
 
         if (fs.existsSync(extensionPath)) {
