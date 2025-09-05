@@ -21,6 +21,7 @@ const emitter = degit(repo, {
 });
 
 console.log("[INFO] Creating project PXHJS...");
+console.log("[INFO] Version: 1.0.1");
 
 emitter
     .clone(dest)
@@ -51,7 +52,7 @@ emitter
                         console.log(
                             "[OK] VS Code extension has been installed successfully"
                         );
-                        console.log("Waiting...");
+                        console.log("Waiting... :)");
                     }
                 }
             );
@@ -59,7 +60,7 @@ emitter
             console.warn(
                 "[WARN] File extension does not exist, skipping extension installation"
             );
-            console.log("Waiting...");
+            console.log("Waiting... :)");
         }
     })
     .catch((err) => {
