@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 const degit = require("degit");
 const path = require("path");
+const { exec } = require("child_process");
+const fs = require("fs");
 
 const appName = process.argv[2];
 if (!appName) {
-    console.error("[ERROR] Please, enter name of project. Ex:");
+    console.error("[ERROR] Please enter project name. Example:");
     console.error("        npx create-app-pxhjs my-app");
     process.exit(1);
 }
@@ -18,17 +20,48 @@ const emitter = degit(repo, {
     verbose: true,
 });
 
-console.log("[INFO] Creating PXHJS project...");
+console.log("[INFO] Creating project PXHJS...");
 
 emitter
     .clone(dest)
     .then(() => {
-        console.log("\n[OK] Project PXHJS created at: ", dest);
+        console.log("\n[OK] Project PXHJS has been created at: ", dest);
+
+        // Hiển thị các bước tiếp theo
         console.log("\nNext steps:");
         console.log("  cd " + appName);
         console.log("  npm install");
         console.log("  npm start\n");
+
+        // Kiểm tra và cài đặt extension
+        const extensionPath = path.join(
+            dest,
+            "vscode-extension",
+            "pxh-language-0.0.1.vsix"
+        );
+
+        if (fs.existsSync(extensionPath)) {
+            exec(
+                `code --install-extension "${extensionPath}"`,
+                (error, stdout, stderr) => {
+                    if (error) {
+                        console.warn(
+                            "[WARN] Cannot install VS Code extension:"
+                        );
+                        console.warn(`       ${error.message}`);
+                    } else {
+                        console.log(
+                            "[OK] VS Code extension has been installed successfully"
+                        );
+                    }
+                }
+            );
+        } else {
+            console.warn(
+                "[WARN] File extension does not exist, skipping extension installation"
+            );
+        }
     })
     .catch((err) => {
-        console.error("[ERROR] Failed to create project:", err);
+        console.error("[ERROR] Cannot create project:", err);
     });

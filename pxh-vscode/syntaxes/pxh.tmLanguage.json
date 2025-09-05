@@ -8,21 +8,24 @@
     ],
     "repository": {
         "css-block": {
-            "begin": "pxh\\[css\\]:",
-            "end": "(?=pxh\\[|$)",
+            "begin": "pxh\\[css\\]:\\s*\\{",
+            "end": "\\}",
             "name": "meta.embedded.block.css",
+            "contentName": "source.css",
             "patterns": [{ "include": "source.css" }]
         },
         "html-block": {
-            "begin": "pxh\\[html\\]:",
-            "end": "(?=pxh\\[|$)",
+            "begin": "pxh\\[html\\]:\\s*\\{",
+            "end": "\\}",
             "name": "meta.embedded.block.html",
+            "contentName": "text.html.basic",
             "patterns": [{ "include": "text.html.basic" }]
         },
         "js-block": {
-            "begin": "pxh\\[js\\]:",
-            "end": "(?=pxh\\[|$)",
+            "begin": "pxh\\[js\\]:\\s*\\{",
+            "end": "\\}",
             "name": "meta.embedded.block.js",
+            "contentName": "source.js",
             "patterns": [{ "include": "source.js" }]
         }
     }

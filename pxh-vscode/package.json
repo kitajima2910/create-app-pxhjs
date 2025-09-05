@@ -1,0 +1,44 @@
+{
+    "name": "pxh-language",
+    "displayName": "PXH Language Support",
+    "description": "PXH custom language with embedded HTML, CSS, JS",
+    "version": "0.0.1",
+    "publisher": "pxh",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "pxh",
+                "aliases": [
+                    "PXH",
+                    "pxh"
+                ],
+                "extensions": [
+                    ".pxh"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "pxh",
+                "scopeName": "source.pxh",
+                "path": "./syntaxes/pxh.tmLanguage.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.css": "css",
+                    "meta.embedded.block.html": "html",
+                    "meta.embedded.block.js": "javascript"
+                }
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kitajima2910/pxhjs.git"
+    }
+}

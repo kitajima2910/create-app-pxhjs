@@ -1,0 +1,15 @@
+pxh[css]: {
+    p {
+        color: hotpink;
+    }
+}
+
+pxh[html]: {
+    <p onclick="message()">Hello, World! - PXH</p>
+}
+    
+pxh[js]: {
+    const message = () => {
+        console.log('Hello, World! - PXH');
+    }
+}
