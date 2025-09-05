@@ -1,0 +1,33 @@
+{
+    "name": "pxh-language",
+    "displayName": "PXH Language",
+    "publisher": "pxh",
+    "version": "1.0.0",
+    "description": "PXH Language for Visual Studio Code",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "pxh",
+                "aliases": [
+                    "PXH"
+                ],
+                "extensions": [
+                    ".pxh"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "pxh",
+                "scopeName": "source.pxh",
+                "path": "./syntaxes/pxh.tmLanguage.json"
+            }
+        ]
+    }
+}
