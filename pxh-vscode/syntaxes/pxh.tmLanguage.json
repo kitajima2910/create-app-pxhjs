@@ -1,6 +1,7 @@
 {
     "scopeName": "source.pxh",
     "name": "PXH",
+    "fileTypes": ["pxh"],
     "patterns": [
         { "include": "#css-block" },
         { "include": "#html-block" },
@@ -10,21 +11,21 @@
         "css-block": {
             "begin": "pxh\\[css\\]:\\s*\\{",
             "end": "\\}",
-            "name": "meta.embedded.block.css",
+            "name": "meta.embedded.block.css.pxh",
             "contentName": "source.css",
             "patterns": [{ "include": "source.css" }]
         },
         "html-block": {
             "begin": "pxh\\[html\\]:\\s*\\{",
             "end": "\\}",
-            "name": "meta.embedded.block.html",
+            "name": "meta.embedded.block.html.pxh",
             "contentName": "text.html.basic",
             "patterns": [{ "include": "text.html.basic" }]
         },
         "js-block": {
             "begin": "pxh\\[js\\]:\\s*\\{",
             "end": "\\}",
-            "name": "meta.embedded.block.js",
+            "name": "meta.embedded.block.js.pxh",
             "contentName": "source.js",
             "patterns": [{ "include": "source.js" }]
         }
